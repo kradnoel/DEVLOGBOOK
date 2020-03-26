@@ -100,5 +100,11 @@ dist
 # DynamoDB Local files
 .dynamodb/
 
+# Slqlite3 Local files
+devlb.db
+
+# Go Vendor files
+vendor/
+
 # TernJS port file
 .tern-port
