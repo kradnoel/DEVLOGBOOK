@@ -6,9 +6,9 @@ import (
 	"net/http"
 
 	"github.com/go-chi/chi"
-	"github.com/kradnoel/teka/internal/repository"
-	"github.com/kradnoel/teka/internal/types"
-	"github.com/kradnoel/teka/internal/utils"
+	"github.com/kradnoel/DEVLOGBOOK/server/internal/repository"
+	"github.com/kradnoel/DEVLOGBOOK/server/internal/types"
+	"github.com/kradnoel/DEVLOGBOOK/server/internal/utils"
 )
 
 // Handlers for project

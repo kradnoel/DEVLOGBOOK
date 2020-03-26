@@ -1,7 +1,7 @@
 package main
 
 import (
-	h "github.com/kradnoel/teka/internal/http"
+	h "github.com/kradnoel/DEVLOGBOOK/server/internal/http"
 )
 
 func main() {

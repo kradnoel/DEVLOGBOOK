@@ -1,9 +1,9 @@
 package repository
 
 import (
-	"github.com/kradnoel/teka/internal/persistance"
-	"github.com/kradnoel/teka/internal/types"
-	"github.com/kradnoel/teka/internal/utils"
+	"github.com/kradnoel/DEVLOGBOOK/server/internal/persistance"
+	"github.com/kradnoel/DEVLOGBOOK/server/internal/types"
+	"github.com/kradnoel/DEVLOGBOOK/server/internal/utils"
 )
 
 func CreateTask(task types.Task) bool {

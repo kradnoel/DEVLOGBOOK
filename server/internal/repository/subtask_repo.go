@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/kradnoel/teka/internal/persistance"
-	"github.com/kradnoel/teka/internal/types"
-	"github.com/kradnoel/teka/internal/utils"
+	"github.com/kradnoel/DEVLOGBOOK/server/internal/persistance"
+	"github.com/kradnoel/DEVLOGBOOK/server/internal/types"
+	"github.com/kradnoel/DEVLOGBOOK/server/internal/utils"
 )
 
 func CreateSubTask(subtask types.Subtask) bool {

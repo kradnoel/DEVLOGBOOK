@@ -5,7 +5,7 @@ import (
 
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/sqlite"
-	"github.com/kradnoel/teka/internal/types"
+	"github.com/kradnoel/DEVLOGBOOK/server/internal/types"
 )
 
 var db *gorm.DB
