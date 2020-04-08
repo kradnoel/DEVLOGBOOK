@@ -43,24 +43,27 @@ servue.template = (content, context, bundle) => (`
 </html>
 `)
 
+// Home 
 app.get('/', async (req, res) => {
   debug('app:express')
   res.send(await servue.render('pages/dashboard'))
 })
 
-
+// Project
 app.get('/projects', async(req, res) => {
   res.send(await servue.render('pages/project'))
 })
 
+// Task
 app.get('/projects/:id', async(req, res) => {
   var id = req.params.id
   let data = { "id": id }
   res.send(await servue.render('pages/task', {data}))
 })
 
+// Subtask
 app.get('/projects/:pid/:tid', async(req, res) => {
-  var pid =  req.params.id
+  var pid =  req.params.pid
   var tid = req.params.tid
   let data = { "pid": pid, "tid": tid}
   res.send(await servue.render('pages/subtask', {data}))
