@@ -5,13 +5,15 @@ const dotenv = require("dotenv").config()
 const axios = require("axios")
 const debug = require('debug')('express')
 
+const port = process.env.PORT || 3000
+
 var app = express()
 
 app.use(express.static(path.join(__dirname, 'public')))
 
 // Sets default data from .env
 app.set('host', process.env.HOST)
-app.set('port', process.env.PORT)
+app.set('port', port)
 
 var servue = new Servue()
 
@@ -64,5 +66,4 @@ app.get('/projects/:pid/:tid', async(req, res) => {
   res.send(await servue.render('pages/subtask', {data}))
 })
 
-console.log("Server is starting at http://localhost:" + app.get('port'))
-app.listen(app.get('port'))
+app.listen(app.get('port'), () => console.log(`listening on port ${port}!`))

@@ -85,8 +85,6 @@
                 						<a class="btn btn-primary" :href="'/projects/' + id + '/' + v.guid">
                 							<i class="fas fa-edit"></i> Edit
                 						</a>
-                						<!--<TaskItem :title.sync="title" :id="v.guid" :description.sync="v.description">
-                						</TaskItem>-->
                 						<!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-edit"> <i class="fas fa-edit"></i> Edit
                 						</button>-->
                 						<button class="btn btn-danger" @click="deleteTask(v.guid)">
@@ -98,6 +96,7 @@
                 		</table>
                 	</div>
                 </div>
+                <br>
               </div>
             </MainContent>
             <Footbar></Footbar>
@@ -119,7 +118,6 @@ import Sidebar from "common/sidebar.vue"
 import Footbar from "common/footbar.vue"
 import MainContent from "common/main_content.vue"
 import ProjectItem from "components/ProjectItem.vue"
-import TaskItem from "components/TaskItem.vue"
 export default {
     data(){
       return{
@@ -192,8 +190,7 @@ export default {
         Sidebar,
         Footbar,
         MainContent,
-        ProjectItem,
-        TaskItem
+        ProjectItem
     }
 }
 </script>
